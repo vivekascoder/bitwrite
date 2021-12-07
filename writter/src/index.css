@@ -1,0 +1,37 @@
+/* ./src/index.css */
+@tailwind base;
+@tailwind components;
+@font-face {
+  font-family: "PragmataPro for Powerline";
+  src: url(./assets/fonts/PragmataPro.otf) format("otf");
+}
+.App {
+  @apply bg-black min-h-screen;
+  @apply flex items-start justify-center;
+}
+.ShowCase {
+  @apply w-1/3 min-h-screen;
+  @apply border-r-2 border-gray-900;
+}
+.ShowCase .header {
+  @apply flex items-center justify-center;
+  @apply bg-pink-800 h-12;
+}
+.header h1 {
+  @apply text-white font-bold text-xl;
+}
+.Writer {
+  @apply w-2/3 min-h-screen;
+}
+.Writer .header {
+  @apply flex items-center justify-between;
+  @apply bg-pink-800 h-12;
+  @apply px-4;
+}
+.Writer .header p {
+  @apply text-white;
+}
+.btn {
+  @apply bg-pink-800 text-white px-6 py-2 rounded-sm hover:bg-red-800;
+}
+@tailwind utilities;
